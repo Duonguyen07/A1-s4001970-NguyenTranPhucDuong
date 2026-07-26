@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sóng — web poetry tương tác bằng HTML và CSS.">
+  <title>Sóng — Xuân Quỳnh</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="poem-journey">
+
+    <section class="scene scene-1" aria-label="Dữ dội và dịu êm">
+      <div class="scene-canvas scene-1-canvas">
+        <img class="scene-1-sky" src="assets/images/scene-01-05-sky-background.png" alt="Bầu trời xanh nhạt">
+        <div class="sea-hover-zone" tabindex="0" aria-label="Di chuột vào mặt biển để đổi từ sóng dữ sang sóng yên"></div>
+
+        <img class="waves storm-waves" src="assets/images/scene-01-storm-waves.png" alt="Mặt biển với những con sóng dữ">
+        <img class="waves calm-waves" src="assets/images/scene-01-calm-waves.png" alt="Mặt biển dịu êm">
+
+        <div class="poem-text scene-1-rough" aria-hidden="true">
+          <p class="rough-one">Dữ dội...</p>
+          <p class="rough-two">Ồn ào...</p>
+        </div>
+
+        <div class="poem-text scene-1-calm" aria-hidden="true">
+          <p class="calm-one">...và dịu êm</p>
+          <p class="calm-two">...và lặng lẽ</p>
+        </div>
+
+        <p class="screen-reader-text">Dữ dội và dịu êm. Ồn ào và lặng lẽ.</p>
+      </div>
+    </section>
+
+    <section class="scene-2-3" aria-label="Sông không hiểu nổi mình, sóng tìm ra tận bể, ôi con sóng ngày xưa và ngày sau vẫn thế">
+      <img class="shared-vortex" src="assets/images/scene-03-time-vortex.png" alt="Một vòng xoáy nước lớn nối giữa hai cảnh">
+
+      <div class="scene-2-layer">
+        <img class="scene-2-girl" src="assets/images/scene-02-girl-sitting.png" alt="Cô gái ngồi bên rìa vòng xoáy nước">
+
+        <input class="interaction-toggle" type="checkbox" id="split-text-toggle">
+        <label class="poem-text split-text" for="split-text-toggle" aria-label="Nhấn để tách dòng Sông không hiểu nổi mình thành nhiều chữ rời">
+          <span class="screen-reader-text">Sông không hiểu nổi mình</span>
+          <span class="split-letters" aria-hidden="true">
+            <span class="char" style="--dx:-13vw;--dy:3vh;--rot:-10deg;--delay:0ms">S</span>
+            <span class="char" style="--dx:-8vw;--dy:-5vh;--rot:7deg;--delay:12ms">ô</span>
+            <span class="char" style="--dx:-3vw;--dy:5vh;--rot:-6deg;--delay:24ms">n</span>
+            <span class="char" style="--dx:4vw;--dy:-3vh;--rot:8deg;--delay:36ms">g</span>
+            <span class="char space">&nbsp;</span>
+            <span class="char" style="--dx:11vw;--dy:2vh;--rot:-5deg;--delay:48ms">k</span>
+            <span class="char" style="--dx:-11vw;--dy:-7vh;--rot:10deg;--delay:60ms">h</span>
+            <span class="char" style="--dx:-5vw;--dy:7vh;--rot:-12deg;--delay:72ms">ô</span>
+            <span class="char" style="--dx:2vw;--dy:-6vh;--rot:6deg;--delay:84ms">n</span>
+            <span class="char" style="--dx:9vw;--dy:6vh;--rot:-8deg;--delay:96ms">g</span>
+            <span class="char space">&nbsp;</span>
+            <span class="char" style="--dx:-12vw;--dy:8vh;--rot:12deg;--delay:108ms">h</span>
+            <span class="char" style="--dx:-7vw;--dy:1vh;--rot:-9deg;--delay:120ms">i</span>
+            <span class="char" style="--dx:-1vw;--dy:-8vh;--rot:8deg;--delay:132ms">ể</span>
+            <span class="char" style="--dx:5vw;--dy:8vh;--rot:-6deg;--delay:144ms">u</span>
+            <span class="char space">&nbsp;</span>
+            <span class="char" style="--dx:12vw;--dy:-5vh;--rot:9deg;--delay:156ms">n</span>
+            <span class="char" style="--dx:-9vw;--dy:5vh;--rot:-7deg;--delay:168ms">ổ</span>
+            <span class="char" style="--dx:-3vw;--dy:-4vh;--rot:11deg;--delay:180ms">i</span>
+            <span class="char space">&nbsp;</span>
+            <span class="char" style="--dx:4vw;--dy:4vh;--rot:-10deg;--delay:192ms">m</span>
+            <span class="char" style="--dx:10vw;--dy:-7vh;--rot:7deg;--delay:204ms">ì</span>
+            <span class="char" style="--dx:-6vw;--dy:7vh;--rot:-8deg;--delay:216ms">n</span>
+            <span class="char" style="--dx:7vw;--dy:2vh;--rot:10deg;--delay:228ms">h</span>
+          </span>
+        </label>
+
+        <p class="poem-text scene-2-line-two">Sóng tìm ra tận bể</p>
+      </div>
+
+      <div class="scene-3-layer">
+        <img class="walking-girl" src="assets/images/scene-03-girl-walking.png" alt="Cô gái bước đi trong vòng xoáy thời gian">
+
+        <div class="clocks" aria-label="Năm chiếc đồng hồ có thể tương tác">
+          <div class="clock-hitbox clock-1" tabindex="0"><img src="assets/images/scene-03-clock-01.png" alt="Đồng hồ thứ nhất"></div>
+          <div class="clock-hitbox clock-2" tabindex="0"><img src="assets/images/scene-03-clock-02.png" alt="Đồng hồ thứ hai"></div>
+          <div class="clock-hitbox clock-3" tabindex="0"><img src="assets/images/scene-03-clock-03.png" alt="Đồng hồ thứ ba"></div>
+          <div class="clock-hitbox clock-4" tabindex="0"><img src="assets/images/scene-03-clock-04.png" alt="Đồng hồ thứ tư"></div>
+          <div class="clock-hitbox clock-5" tabindex="0"><img src="assets/images/scene-03-clock-05.png" alt="Đồng hồ thứ năm"></div>
+        </div>
+
+        <p class="poem-text scene-3-past">Ôi con sóng ngày xưa</p>
+        <p class="poem-text scene-3-future">Và ngày sau vẫn thế</p>
+      </div>
+    </section>
+
+    <section class="scene scene-4" aria-label="Nỗi khát vọng tình yêu, bồi hồi trong ngực trẻ">
+      <div class="scene-canvas scene-4-canvas">
+        <div class="heart-stage">
+          <p class="poem-text scene-4-primary">Nỗi khát vọng tình yêu</p>
+          <p class="poem-text scene-4-alt scene-4-alt-left">Bồi hồi</p>
+          <p class="poem-text scene-4-alt scene-4-alt-right">Trong ngực trẻ</p>
+
+          <div class="heart-hitbox" tabindex="0" aria-label="Di chuột lên trái tim để làm tim đập và đổi câu thơ">
+            <img class="anatomical-heart" src="assets/images/scene-04-anatomical-heart.png" alt="Trái tim giải phẫu">
+          </div>
+          <img class="hugging-arms" src="assets/images/scene-04-hugging-arms.png" alt="Hai cánh tay ôm lấy trái tim">
+        </div>
+      </div>
+    </section>
+
+    <section class="scene-5-6" aria-label="Trước muôn trùng sóng bể, em nghĩ về anh và biển lớn">
+      <div class="zoom-stage">
+        <img class="zoom-sky" src="assets/images/scene-01-05-sky-background.png" alt="Bầu trời xanh nhạt">
+        <img class="zoom-waves" src="assets/images/scene-01-calm-waves.png" alt="Mặt biển yên bình">
+        <div class="zoom-tint" aria-hidden="true"></div>
+
+        <div class="scene-5-texts poem-text" aria-hidden="true">
+          <p class="scene-5-line-1">Trước muôn trùng sóng bể</p>
+          <p class="scene-5-line-2">Em nghĩ về...</p>
+          <p class="scene-5-word-anh">anh</p>
+          <p class="scene-5-word-em">em</p>
+        </div>
+
+        <input class="interaction-toggle" type="checkbox" id="big-sea-toggle">
+
+        <div class="profile-wrap">
+          <img class="profile-girl" src="assets/images/scene-05-06-girl-profile.png" alt="Cô gái đứng nghiêng trước biển">
+          <label class="big-sea-zone" for="big-sea-toggle" aria-label="Nhấn vào vùng đầu cô gái để hiện chữ biển lớn"></label>
+        </div>
+
+        <p class="poem-text big-sea-display">Biển lớn</p>
+
+        <div class="scene-6-texts poem-text" aria-hidden="true">
+          <p class="scene-6-think">Em nghĩ về</p>
+          <div class="thought-bubble-wrap">
+            <img class="thought-bubble" src="assets/images/scene-06-thought-bubble.png" alt="Bong bóng suy nghĩ">
+            <p class="bubble-line-one">Từ nơi nào</p>
+            <p class="bubble-line-two">Sóng lên?</p>
+          </div>
+        </div>
+
+        <p class="screen-reader-text">Trước muôn trùng sóng bể. Em nghĩ về anh, em. Em nghĩ về biển lớn. Từ nơi nào sóng lên?</p>
+      </div>
+    </section>
+
+    <section class="scene-7-8" aria-label="Sóng bắt đầu từ gió, gió bắt đầu từ đâu, em cũng không biết nữa, khi nào ta yêu nhau">
+      <img class="scene-7-surface" src="assets/images/scene-01-calm-waves.png" alt="Mặt nước phía trên">
+      <img class="shared-light-beam" src="assets/images/scene-07-light-beam.png" alt="Một tia sáng duy nhất kéo dài từ mặt biển xuống đáy">
+      <div class="beam-hover-zone" tabindex="0" aria-label="Di chuột lên tia sáng để ánh sáng chập chờn"></div>
+
+      <img class="falling-girl" src="assets/images/scene-07-girl-falling.png" alt="Cô gái đang rơi trong tia sáng">
+      <p class="poem-text scene-7-left">Sóng bắt đầu từ gió</p>
+      <p class="poem-text scene-7-right">Gió bắt đầu từ đâu?</p>
+
+      <p class="poem-text scene-8-primary">Em cũng không biết nữa</p>
+
+      <div class="eyes-stage">
+        <div class="eyes-hitbox" tabindex="0" aria-label="Di chuột lên đôi mắt để mắt mở hé và đổi câu thơ"></div>
+        <img class="eyes eyes-closed" src="assets/images/scene-08-eyes-closed.png" alt="Đôi mắt đang nhắm">
+        <img class="eyes eyes-open" src="assets/images/scene-08-eyes-half-open.png" alt="Đôi mắt mở hé">
+      </div>
+
+      <div class="light-floor" aria-hidden="true"></div>
+      <p class="poem-text scene-8-alt">Khi nào ta yêu nhau?</p>
+    </section>
+
+  </main>
+<audio
+  class="background-music"
+  controls
+  loop
+  preload="auto"
+  controlsList="nodownload noplaybackrate"
+  aria-label="Background music: Tide of Tears"
+>
+  <source src="assets/audio/tide-of-tears.mp3" type="audio/mpeg">
+  </audio>
+</body>
+</html>
